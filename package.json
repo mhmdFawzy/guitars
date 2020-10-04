@@ -10,7 +10,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "engines": {
-    "node": "13.13.0"
+    "node": "13.X"
   },
   "author": "",
   "license": "ISC",
