@@ -1,5 +1,5 @@
 {
-    "MONGODB_URI": "mongodb+srv://fawzy:anafawzy@cluster0.xbiae.mongodb.net/<dbname>?retryWrites=true&w=majority", 
+    "MONGODB_URI": "mongodb://mhmdfawzy:anafawzy1@ds123080.mlab.com:23080/waves", 
     "SECRET": "SUPERSECRETPASSWORD123",
     "CLOUD_NAME": "damouuupp",
     "CLOUD_API_KEY": "925773393122272",
