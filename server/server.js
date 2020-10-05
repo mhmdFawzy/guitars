@@ -11,7 +11,15 @@ require("dotenv").config();
 
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI);
-
+const MongoClient = require("mongodb").MongoClient;
+const uri =
+  "mongodb+srv://fawzy:anafawzy@cluster0.xbiae.mongodb.net/waves?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true });
+client.connect((err) => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  // client.close();
+});
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cookieParser());
